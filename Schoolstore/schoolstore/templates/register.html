@@ -1,0 +1,38 @@
+	{% extends 'base.html' %}
+	{% block content %}
+
+	<h2 class="modal-title" xmlns="http://www.w3.org/1999/html">Student Login</h2>
+	<div class="modal-header tit-up">
+
+	</div>
+		<div class="modal-body customer-box">
+			<div class="tab-content">
+				<div class="tab-pane active" id="Login">
+					 <form  method="POST">
+			{% csrf_token %}
+			<div class="form-group">
+				<div class="col-sm-12">
+					<input  class="form-control" type="text" name="username" placeholder="Enter your username"><br>
+				</div>
+			</div>
+	       <div class="form-group">
+			   <div class="col-sm-12">
+					<input class="form-control" type="password" name="password" placeholder="Enter your password"><br>
+			   </div>
+		   </div>
+		  <div class="form-group">
+			  <div class="col-sm-12">
+				<input class="form-control" type="password" name="confirm_password" placeholder="Confirm your password"><br>
+			  </div>
+		  </div>
+		<div class="form-group">
+			<div class="col-sm-12">
+			 <button class="btn  btn-primary btn-radius btn-brd grd1" type="submit">Register</button>
+		   </div>
+		</div>
+	</form>
+
+				</div>
+			</div>
+		</div>
+	{% endblock %}

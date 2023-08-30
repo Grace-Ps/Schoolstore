@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+{% block content %}
+<div id="contact" class="section wb">
+        <div class="container">
+            <div class="section-title text-center">
+                <h3>Need Help? Sure we are Online!</h3>
+                <p class="lead">Let us give you more details about the special offer website you want us. Please fill out the form below. <br>We have million of website owners who happy to work with us!</p>
+            </div><!-- end title -->
+            <div class="text-center">
+                <div class="contact_form" style="width:40%">
+                    <div id="message"></div>
+                    <form id="contactform" class="text-center"  name="contactform" method="post">
+                        <div class="row row-fluid text-center">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <div  class="text-center pd">
+                                <a href="{% url 'form_page' %}"  value="SEND" id="submit" class="btn btn-light btn-radius btn-brd grd1 btn-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Go to School store</a>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div><!-- end container -->
+    </div><!-- end section -->
+
+{% endblock %}
